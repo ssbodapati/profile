@@ -295,11 +295,6 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background-attachment: fixed;
   }
-  #hero h1 {
-    font-size: 56px;
-    margin: 0 0 10px 0;
-    line-height: 42px;
-  }
 }
 
 @media (max-width: 768px) {
