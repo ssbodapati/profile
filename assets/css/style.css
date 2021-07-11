@@ -65,22 +65,21 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  bottom: 25%;
   width: 300px;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background:none;
   overflow-y: auto;
 }
 
 #header .profile img {
   margin: 15px auto;
+  padding:20% auto;
   display: block;
-  width: auto;
+  width: 80%;
   border: 8px solid #2c2f3f;
 }
 
@@ -122,11 +121,33 @@ h1, h2, h3, h4, h5, h6 {
 
 #main {
   margin-left: 300px;
+  color:white;
 }
+
 
 @media (max-width: 1199px) {
   #header {
-    left: -300px;
+    position:fixed;
+    left:0px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    bottom:-400px;
+    width: 100vw;
+    transition: all ease-in-out 0.8s;
+    z-index: 0;
+    transition: all 0.8s;
+    background:rgba(2, 33, 51, 0.75);
+    color:white;
+    overflow-y: auto;
+  }
+  #header .profile h1 {
+    display:none;
+  }
+  #header .profile img {
+   display:none;
+  }
+  #header .profile .social-links a {
+    display:none;
   }
   #main {
     margin-left: 0;
@@ -159,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .nav-menu a i, .nav-menu a:focus i {
@@ -187,10 +208,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: none;
   color: #fff;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -204,7 +225,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-active #header {
-  left: 0;
+ left: 0;
+}
+
+@media (max-width: 1199px) {
+  .mobile-nav-active #header {
+    bottom:0px;
+    z-index:999;
+   }
+   
 }
 
 /*--------------------------------------------------------------
@@ -213,19 +242,31 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
 
-#hero:before {
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  display:none;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#myVideo:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 9;
 }
 
 #hero .hero-container {
@@ -283,7 +324,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: rgba(5, 13, 24, 0.5);
 }
 
 .section-title {
@@ -296,7 +337,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: whitesmoke
 }
 
 .section-title h2::after {
@@ -320,7 +361,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: whitesmoke
 }
 
 .about .content ul {
@@ -344,7 +385,9 @@ section {
   color: #149ddd;
   line-height: 0;
 }
-
+.about .content p {
+  text-align:justify;
+}
 .about .content p:last-child {
   margin-bottom: 0;
 }
@@ -1051,7 +1094,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: rgba(0, 0, 0, 0.1)
 }
 
 #footer .copyright {
@@ -1061,7 +1104,7 @@ section {
 #footer .credits {
   padding-top: 5px;
   text-align: center;
-  font-size: 13px;
+  font-size: 8px;
   color: #eaebf0;
 }
 
