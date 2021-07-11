@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top i {
-  font-size: 36px;
+  font-size: 48px;
   color: #fff;
   line-height: 0;
 }
@@ -154,7 +154,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   #main {
     margin-left: 0;
-    height:100vh;
+    background:rgba(0, 0, 0, 0.5);
+    z-index:3
   }
 }
 
@@ -509,7 +510,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #1b2025;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -747,7 +748,7 @@ section {
 }
 
 .services .title a {
-  color: #343a40;
+  color: white
 }
 
 .services .title a:hover {
@@ -784,7 +785,7 @@ section {
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: white;
   margin: 0;
 }
 
@@ -811,6 +812,7 @@ section {
   margin: 0 15px 15px 15px;
   padding: 20px;
   background: #fff;
+  color:black;
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
@@ -855,7 +857,7 @@ section {
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: rgba(0, 0, 0, 0.1);
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -879,14 +881,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #050d18;
+  color: white;
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: white;
 }
 
 .contact .info .email p {
