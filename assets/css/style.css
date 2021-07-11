@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all ease-in-out 0.8s;
     z-index: 0;
     transition: all 0.8s;
-    background:rgba(2, 33, 51, 0.75);
+    background:rgba(2, 33, 51);
     color:white;
     overflow-y: auto;
   }
@@ -206,13 +206,13 @@ h1, h2, h3, h4, h5, h6 {
   top: 15px;
   z-index: 9998;
   border: 0;
-  font-size: 24px;
+  font-size: 36px;
   transition: all 0.4s;
   outline: none !important;
   background-color: none;
   color: #fff;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -233,6 +233,9 @@ h1, h2, h3, h4, h5, h6 {
   .mobile-nav-active #header {
     bottom:0px;
     z-index:999;
+   }
+   .mobile-nav-active #hero,.mobile-nav-active #main{
+    opacity:0.8
    }
    
 }
