@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
     position:fixed;
     left:0px;
     padding:5%;
-    min-height:45vh;
+    max-height:45vh;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     bottom:-400px;
