@@ -267,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .hero-container {
   position: relative;
-  min-width: 300px;
+  min-width: 400px;
 }
 
 #hero h1 {
