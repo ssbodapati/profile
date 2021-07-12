@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   position: fixed;
+  padding:5%;
   height:100vh;
   width: 300px;
   transition: all ease-in-out 0.5s;
@@ -126,7 +127,8 @@ h1, h2, h3, h4, h5, h6 {
   #header {
     position:fixed;
     left:0px;
-    max-height:40vh;
+    padding:5%;
+    min-height:45vh;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     bottom:-400px;
