@@ -926,6 +926,7 @@ section {
 
 #footer .copyright {
   text-align: left;
+   opacity:0.10;
 }
 
 #footer .credits {
@@ -933,6 +934,7 @@ section {
   text-align: center;
   font-size: 8px;
   color: #eaebf0;
+   opacity:0.10;
 }
 
 @media (max-width: 1199px) {
